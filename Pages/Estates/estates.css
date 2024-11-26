@@ -1,0 +1,328 @@
+/* RESET CSS  */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "inter", sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* HEADER SECTION  */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5rem 1rem;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.ham-div {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1001;
+    transition: all 0.3s ease;
+}
+
+.ham-div:hover {
+    color: rgb(1, 125, 61);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav > a {
+    padding: 0.5rem 1rem;
+    color: rgb(51, 51, 51);
+    transition: all 0.3s ease;
+}
+
+nav > a:hover {
+    border-bottom: 2px solid black;
+    padding-bottom: 6px;
+}
+
+nav > a:active {
+    color: rgb(1, 125, 61);
+}
+
+.clients-btn {
+    padding: 10px 15px;
+    border: 1px solid rgb(1, 125, 61);
+    background-color: white;
+    color: rgb(51, 51, 51);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.clients-btn:hover {
+    background-color: rgb(1, 125, 61);
+    color: white;
+}
+
+.clients-btn:active {
+    opacity: 0.7;
+}
+
+/* MAIN CONTENT */
+.estate-hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.estate-div1, .estate-div2 {
+    flex: 1;
+    max-width: 50%;
+}
+
+.estate-div1 > h3 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.2;
+}
+
+.estate-div2 {
+    font-size: clamp(1rem, 2vw, 1.1rem);
+    line-height: 1.6;
+}
+
+.estate-div3 {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.price-section {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.price-img, .price-div {
+    flex: 1;
+}
+
+.price-img {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    overflow: hidden;
+}
+
+.price-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 1024px) {
+    .estate-hero-section {
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .ham-div {
+        display: block;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 70%;
+        max-width: 300px;
+        background: white;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5rem 2rem;
+        transition: all 0.3s ease-in-out;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    nav.active {
+        right: 0;
+    }
+
+    nav > a {
+        padding: 1rem 0;
+        width: 100%;
+        font-size: 1.2rem;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+
+    nav > a:last-child {
+        border-bottom: none;
+    }
+
+    .estate-hero-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .estate-div1, .estate-div2 {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .estate-div3 {
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .price-section {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    .price-img, .price-div {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .estate-div1 > h3 {
+        font-size: clamp(1.8rem, 4vw, 2.5rem);
+        line-height: 1.2;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 3rem;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .foot-div1, .foot-div2, .foot-div3 {
+        align-items: center;
+    }
+
+    .side-bar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .estate-div2 {
+        font-size: 16px;
+    }
+
+    .clients-btn {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+
+    .price-div {
+        padding: 1rem;
+    }
+
+    .estate-div3, .estate-div4 {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .contact-us {
+        right: 1rem;
+        bottom: 1rem;
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    nav {
+        width: 85%;
+        padding: 4rem 1rem;
+    }
+
+    .price-div {
+        padding: 0.5rem;
+    }
+}
+
+/* Animation for hamburger menu */
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+nav.slide-in {
+    animation: slideIn 0.3s ease-in-out forwards;
+}
+
+nav.slide-out {
+    animation: slideOut 0.3s ease-in-out forwards;
+}
+
+/* Overlay for mobile menu */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}

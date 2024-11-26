@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+
+    <link rel="stylesheet" href="events.css">
+    <script src="https://kit.fontawesome.com/5f35ddfdec.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <a href="../../index.html"><img src="../../Images/henez logo.png" alt="Henez Logo" class="logo"></a>
+
+        <nav id="nav-menu">
+            <a href="../About Us/about.html">About Us</a>
+            <a href="../Services/Services.html">Services</a>
+            <a href="../Estates/Estates.html">Estate Layouts</a>
+            <a href="../Events/events.html">Events</a>
+            <a href="../Contact Us/contactus.html">Contact Us</a>
+        </nav>
+
+        <a class="clients-btn" href="../Interested/client.html">Interested Client</a>
+
+        <div class="ham-div" id="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- MAIN SECTION  -->
+    <main>
+        <section class="event-section">
+            <div>
+                <h1>Catch the</h1>
+                <h1>highlights of</h1>
+                <h1>our events.</h1>
+            </div>
+
+            <div class="event-div">
+                <p>
+                    We train and equip our team to operate as first class sales representative in an ever competitive digital world.
+                </p>
+
+                <span class="green-dot"></span>
+
+                <div>
+                    <div class="black-width"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="summit-section">
+            <div class="event-card">
+                <a href="#">
+                    <div class="event-img"></div>
+                    <div class="event-text">
+                        <p class="sales">Massive Sales Summit</p>
+                        <p class="year">January 2022</p>
+                    </div>
+                </a>
+
+                <a class="event-card2" href="#">
+                    <div class="event-img2"></div>
+                    <div class="event-text">
+                        <p class="sales">Chop Life and Tour</p>
+                        <p class="year">January 2022</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER SECTION  -->
+    <footer>
+        <div class="foot-div1">
+            <a href="../../index.html">HENEZ HOMES LIMITED</a>
+            <p>No. 3, King Maxwell Olowu Close, Ezingbu, Port Harcourt, Rivers State.</p>
+        </div>
+
+        <div class="foot-div2">
+            <h3>USEFUL LINKS</h3>
+            <a href="../About Us/about.html">About Us</a>
+            <a href="../Services/Services.html">Services</a>
+            <a href="../Estates/Estates.html">Estate Layouts</a>
+            <a href="../Events/events.html">Events</a>
+            <a href="../Contact Us/contactus.html">Contact Us</a>
+        </div>
+
+        <div class="foot-div3">
+            <h3>GET IN TOUCH</h3>
+            <p><i class="fa-regular fa-envelope"></i><a href="mailto:info@henezhomes.com">info@henezhomes.com</a></p>
+            <p><i class="fa-solid fa-phone"></i><a href="tel:+2347063595925">+2347063595925</a></p>
+        </div>
+
+        <div>
+            <h3>BECOME A REALTOR</h3>
+        </div>
+    </footer>
+
+    <!-- COPY-RIGHT -->
+    <div class="copyright">
+        <p>Copyright &#169; 2024 HENEZ HOMES LIMITED. All rights reserved.</p>
+    </div>
+
+    <!-- CONTACT US SECTION  -->
+    <a class="contact-us" href="https://wa.me/2347063595925">
+        <i class="fa-brands fa-whatsapp"></i>
+        Contact Us
+    </a>
+
+    <div class="side-bar">
+        <div>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="mailto:info@henezhomes.com"><i class="fa-sharp fa-regular fa-envelope"></i></a>
+        </div>
+    </div>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

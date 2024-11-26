@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    
+    <link rel="stylesheet" href="contactus.css">
+
+    <script src="https://kit.fontawesome.com/5f35ddfdec.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="../../index.html"><img src="../../Images/henez logo.png" alt=""></a>
+
+        <nav id="nav-menu">
+            <a href="../About Us/about.html">About Us</a>
+            <a href="../Services/Services.html">Services</a>
+            <a href="../Estates/Estates.html">Estate Layouts</a>
+            <a href="../Events/events.html">Events</a>
+            <a href="../Contact Us/contactus.html">Contact Us</a>
+        </nav>
+
+        <a class="clients-btn" href="../Interested/client.html">Interested Client</a>
+      
+        <div class="ham-div" id="hamburger">
+            <i class="fa-solid fa-bars"></i> 
+        </div>
+    </header>
+
+
+    <h1>
+        Contact <span>Us</span> 
+    </h1>
+ 
+
+
+    <main>
+        <section class="map-section">
+                <div class="frame">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126946.11472077899!2d6.602438491633943!3d6.121808002079154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1043ed44843c4647%3A0x426aa60e476949db!2sHenez%20Strategies%20Nig%20Ltd!5e0!3m2!1sen!2sng!4v1724690895151!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="contact-card">
+                    <div class="office-card">
+                            <div class="head-office">
+
+                                    <div>
+                                        <div class="icon"><i class="fa-sharp fa-solid fa-location-dot"></i></div>
+                                    </div>
+
+                                    <div class="office-div">
+                                        <h2>Head Office:</h2>
+                                        <p>
+                                            No. 5, Oney Ofuokwa Street, Behind Presidential Lodge, Jesus Saves Rd, Asaba, Nigeria.
+                                        </p>
+                
+                                    </div>
+                             </div>
+
+                              <div class="head-office">
+
+                                    <div>
+                                        <div class="icon"><i class="fa-sharp fa-regular fa-envelope"></i></div>
+                                    </div>
+
+                                    <div class="office-div">
+                                        <h2>Email:</h2>
+                                        <p>
+                                            info@henezstrategies.com
+                                        </p>
+                                    </div>
+                             </div>
+
+                             <div class="head-office">
+
+                                    <div>
+                                        <div class="icon"><i class="fa-solid fa-phone-flip"></i></div>
+                                    </div>
+
+                                    <div class="office-div">
+                                        <h2>Call:</h2>
+                                        <p>
+                                            +2347063595925
+                                        </p>
+                                        <p>
+                                            +2348067426641
+                                        </p>
+                                    </div>
+                              </div>
+                    </div>
+
+                    <!-- FORM AREA  -->
+                    <div class="form-div">
+                        <form action="">
+                            <input class="full-name" placeholder="Full Name" type="text">
+
+                            <input class="email" placeholder="Email" type="email">
+
+                            <!-- SUBJECT  -->
+                             <input class="subject" placeholder="Subject" type="text">
+                             <textarea placeholder="Message" name="" id=""></textarea>
+
+                            <div class="submit-btn">
+                                <button type="submit">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        </section>
+
+        <!-- OFFICES ADDRESS  -->
+
+       
+
+
+    </main>
+
+
+    
+    <!-- FOOTER SECTION  -->
+    
+    <footer>
+        <div class="foot-div1">
+            <a href="index.html">HENEZ STRATEGIES NIG LTD</a>
+            <p><b>Head Office:</b></p>
+            <p>No. 5, Oney Ofuokwa Street, Behind Presidential Lodge, Jesus Saves Rd, Asaba, Nigeria.</p>
+        </div>
+
+        <div class="foot-div2">
+            <h3>USEFUL LINKS</h3>
+            <a href="../About Us/about.html">About Us</a>
+            <a href="../Services/Services.html">Services</a>
+            <a href="../Estates/Estates.html">Estate Layouts</a>
+            <a href="../Events/events.html">Events</a>
+            <a href="../Contact Us/contactus.html">Contact Us</a>
+        </div>
+
+        <div class="foot-div3">
+            <h3>GET IN TOUCH</h3>
+            <p> <i class="fa-regular fa-envelope"></i><a href="">info@henezstrategies.com</a></p>
+            <p> <i class="fa-solid fa-phone"></i>+2347063595925</p>
+        </div>
+
+        <div>
+            <h3>BECOME A REALTOR</h3>
+
+        </div>
+    </footer>
+
+    <!-- COPY-RIGHT -->
+    <div class="copyright">
+        <P>Copyright &#169; 2024 HENEZ STRATEGIES NIG LTD. All rights reserved.</P>
+    </div>
+
+    <!-- CONTACT US SECTION  -->
+
+    <a class="contact-us" href="">
+        <i class="fa-brands fa-whatsapp"></i>
+        Contact Us
+    </a>
+
+
+    <div class="side-bar">
+        <div>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""> <i class="fa-sharp fa-regular fa-envelope"></i></a>
+        </div>
+    </div>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const nav = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>

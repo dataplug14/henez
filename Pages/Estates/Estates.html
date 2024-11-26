@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estate Layouts</title>
+
+    <!-- Make sure path to CSS is correct -->
+    <link rel="stylesheet" href="./estates.css">
+
+    <script src="https://kit.fontawesome.com/5f35ddfdec.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <a href="../../index.html"><img src="../../Images/henez logo.png" alt="Henez Logo" class="logo"></a>
+
+        <nav id="nav-menu">
+            <a href="../About Us/about.html">About Us</a>
+            <a href="../Services/Services.html">Services</a>
+            <a href="../Estates/Estates.html">Estate Layouts</a>
+            <a href="../Events/events.html">Events</a>
+            <a href="../Contact Us/contactus.html">Contact Us</a>
+        </nav>
+
+        <a class="clients-btn" href="../Interested/client.html">Interested Client</a>
+
+        <div class="ham-div" id="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <main>
+        <section class="estate-hero-section">
+            <div class="estate-div1">
+                <h3>Discover Your Dream Home</h3>
+                <h3>in Delta State's Most</h3>
+                <h3>Prestigious Estates</h3>
+            </div>
+
+            <div class="estate-div2">
+                <div>
+                    Explore our carefully curated selection of premium estates in Delta State. Each property offers unique advantages and investment opportunities in prime locations.
+                </div>
+
+                <div class="estate-div3">
+                    <div>
+                        <p><i class="fa-solid fa-square-check"></i> VERIFIED TITLES</p>
+                        <p><i class="fa-solid fa-square-check"></i> FLEXIBLE PAYMENT</p>
+                    </div>
+
+                    <div>
+                        <p><i class="fa-solid fa-square-check"></i> PRIME LOCATIONS</p>
+                        <p><i class="fa-solid fa-square-check"></i> SECURE INVESTMENT</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="estates-grid">
+            <div class="estate-card">
+                <div class="estate-image">
+                    <img src="../../Images/My Signature Estate.jpeg" alt="My Signature Estate">
+                    <div class="price-badge">₦20M</div>
+                </div>
+                <div class="estate-details">
+                    <h3>My Signature Estate</h3>
+                    <p class="location"><i class="fa-solid fa-location-dot"></i> Behind NNPC, Ibusa Road, Asaba</p>
+                    <div class="features">
+                        <span><i class="fa-solid fa-check"></i> C of O</span>
+                        <span><i class="fa-solid fa-check"></i> Dry Land</span>
+                        <span><i class="fa-solid fa-check"></i> Gated</span>
+                    </div>
+                    <a href="#" class="view-details">View Details</a>
+                </div>
+            </div>
+
+            <!-- Repeat similar structure for other estate cards -->
+            <!-- Additional estate cards here -->
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="foot-div1">
+            <a href="../../index.html">HENEZ STRATEGIES NIG LTD</a>
+            <p><b>Head Office:</b></p>
+            <p>No. 5, Oney Ofuokwa Street, Behind Presidential Lodge, Jesus Saves Rd, Asaba, Nigeria.</p>
+        </div>
+
+        <div class="foot-div2">
+            <h3>USEFUL LINKS</h3>
+            <a href="../About Us/about.html">About Us</a>
+            <a href="../Services/Services.html">Services</a>
+            <a href="#">Estate Layouts</a>
+            <a href="../Events/events.html">Events</a>
+            <a href="../Contact Us/contactus.html">Contact Us</a>
+        </div>
+
+        <div class="foot-div3">
+            <h3>GET IN TOUCH</h3>
+            <p><i class="fa-regular fa-envelope"></i><a href="mailto:info@henezstrategies.com">info@henezstrategies.com</a></p>
+            <p><i class="fa-solid fa-phone"></i> +2347063595925</p>
+        </div>
+
+        <div>
+            <h3>BECOME A REALTOR</h3>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        <p>Copyright &#169; 2024 HENEZ STRATEGIES NIG LTD. All rights reserved.</p>
+    </div>
+
+    <a class="contact-us" href="https://wa.me/2347063595925">
+        <i class="fa-brands fa-whatsapp"></i>
+        Contact Us
+    </a>
+
+    <div class="side-bar">
+        <div>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="mailto:info@henezstrategies.com"><i class="fa-sharp fa-regular fa-envelope"></i></a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.getElementById('hamburger');
+            const nav = document.getElementById('nav-menu');
+
+            hamburger.addEventListener('click', function() {
+                nav.classList.toggle('active');
+                // Optional: Toggle hamburger icon
+                this.querySelector('i').classList.toggle('fa-bars');
+                this.querySelector('i').classList.toggle('fa-times');
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!nav.contains(event.target) && !hamburger.contains(event.target)) {
+                    nav.classList.remove('active');
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

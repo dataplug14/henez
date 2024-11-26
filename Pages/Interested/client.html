@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interested Form</title>
+
+    <link rel="stylesheet" href="client.css">
+    <script src="https://kit.fontawesome.com/5f35ddfdec.js"></script>
+</head>
+<body>
+    <header>
+        <a href="../../index.html"><img src="../../Images/henez logo.png" alt="Henez Logo"></a>
+
+        <nav id="nav-menu">
+            <a href="../About Us/about.html">About Us</a>
+            <a href="../Services/Services.html">Services</a>
+            <a href="../Estates/Estates.html">Estate Layouts</a>
+            <a href="../Events/events.html">Events</a>
+            <a href="../Contact Us/contactus.html">Contact Us</a>
+        </nav>
+
+        <a class="clients-btn" href="../Interested/client.html">Interested Client</a>
+
+        <div class="ham-div" id="hamburger">
+            <i class="fa-solid fa-bars"></i> 
+        </div>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <div class="interest-form">
+                <h2>PROPERTY INTEREST FORM</h2>
+    
+                <form action="" method="POST">
+                    <input class="input" placeholder="Full Name" type="text" required>
+    
+                    <h5>Date Of Birth</h5>
+                    <input class="input" type="date" required>
+    
+                    <input class="input" placeholder="Phone Number" type="tel" required>
+    
+                    <textarea placeholder="Address" name="Address" required></textarea>
+    
+                    <input class="state" placeholder="State" type="text" required>
+                    <input class="city" placeholder="City" type="text" required>
+    
+                    <input class="input" placeholder="Email" type="email" required>
+    
+                    <h5>Select Property Interested In:</h5>
+                    <select name="Select Estate" required>
+                        <option value="">Select Estate</option>
+                        <option value="BILLIONARE'S COURT">BILLIONAIRE'S COURT</option>
+                        <option value="MY SIGNATURE ESTATE">MY SIGNATURE ESTATE</option>
+                        <option value="GREAT VIEW ESTATE">GREAT VIEW ESTATE</option>
+                        <option value="D'PRINCE COURT">D'PRINCE COURT</option>
+                        <option value="GENESIS ESTATE">GENESIS ESTATE</option>
+                    </select>
+    
+                    <div class="building">
+                        <div>
+                            <h5>Type of Building</h5>
+                        </div>
+                        
+                        <div>
+                            <input type="radio" id="duplex" name="Building" value="Duplex" required>
+                            <label class="bungalow" for="duplex">Duplex</label> 
+    
+                            <input type="radio" id="bungalow" name="Building" value="Bungalow">
+                            <label class="bungalow" for="bungalow">Bungalow</label>
+            
+                            <input type="radio" id="commercial" name="Building" value="Commercial">
+                            <label for="commercial">Commercial</label>
+                        </div>
+                    </div>
+                    
+                    <div class="payment-plan">
+                        <div>
+                            <h5>MODE OF PAYMENT</h5>
+                        </div>
+     
+                        <div>
+                            <input type="radio" id="outright" name="Payment-Plan" value="Outright" required>
+                            <label class="out" for="outright">Outright</label>
+             
+                            <input type="radio" id="installment" name="Payment-Plan" value="Installment">
+                            <label for="installment">Installment</label>
+                        </div>
+                    </div>
+    
+                    <h2>NEXT OF KIN</h2>
+                    <input class="input" placeholder="Surname" type="text" required>
+                    <input class="input" placeholder="Middle name" type="text" required>
+    
+                    <input class="input" placeholder="First name" type="text" required>
+                    <input class="input" placeholder="Phone number" type="tel" required>
+    
+                    <textarea placeholder="Residential Address" required></textarea>
+                
+                    <select name="Relationship Status" required>
+                        <option value="">Relationship Status</option>
+                        <option value="Single">Single</option>
+                        <option value="Married">Married</option>
+                        <option value="Divorced">Divorced</option>
+                        <option value="Others">Others</option>
+                    </select>
+    
+                    <button class="submit-btn" type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- FOOTER SECTION -->
+        <footer>
+            <div class="foot-div1">
+                <a href="../../index.html">HENEZ STRATEGIES NIG LTD</a>
+                <p><b>Head Office:</b></p>
+                <p>No. 5, Oney Ofuokwa Street, Behind Presidential Lodge, Jesus Saves Rd, Asaba, Nigeria.</p>
+            </div>
+    
+            <div class="foot-div2">
+                <h3>USEFUL LINKS</h3>
+                <a href="../About Us/about.html">About Us</a>
+                <a href="../Services/Services.html">Services</a>
+                <a href="../Estates/Estates.html">Estate Layouts</a>
+                <a href="../Events/events.html">Events</a>
+                <a href="../Contact Us/contactus.html">Contact Us</a>
+            </div>
+    
+            <div class="foot-div3">
+                <h3>GET IN TOUCH</h3>
+                <p><i class="fa-regular fa-envelope"></i><a href="mailto:info@henezstrategies.com">info@henezstrategies.com</a></p>
+                <p><i class="fa-solid fa-phone"></i> +2347063595925</p>
+            </div>
+    
+            <div>
+                <h3>BECOME A REALTOR</h3>
+            </div>
+        </footer>
+    
+        <!-- COPY-RIGHT -->
+        <div class="copyright">
+            <p>Copyright &#169; 2024 HENEZ STRATEGIES NIG LTD. All rights reserved.</p>
+        </div>
+    
+        <!-- CONTACT US SECTION -->
+        <a class="contact-us" href="https://wa.me/2347063595925">
+            <i class="fa-brands fa-whatsapp"></i>
+            Contact Us
+        </a>
+    
+        <div class="side-bar">
+            <div>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="mailto:info@henezstrategies.com"><i class="fa-sharp fa-regular fa-envelope"></i></a>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
